@@ -1,0 +1,35 @@
+<!-- NAV BAR MENU -->
+<sticky-bar></sticky-bar>
+
+<!-- WRAPPER -->
+<div style="padding-top: 70px; background-color: var(--light-gray-color)">
+  <!-- SEZIONE CATEGORIA -->
+  <div class="row">
+    <div class="row containerCategoria">
+      <div class="col-3" *ngFor="let item of listaCategorie">
+        <card-articolo-categoria [articolo]="item"> </card-articolo-categoria>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEZIONE CARD -->
+  <div class="row">
+    <!-- BLANK SPACE -->
+    <div class="col-1" style="background-color: var(--light-gray-color)"></div>
+    <!-- LEFT CARDS-->
+    <div class="col-5" style="background-color: var(--light-gray-color)">
+      <div *ngFor="let item of listaArticoli">
+        <card-articolo [articolo]="item"> </card-articolo>
+      </div>
+    </div>
+
+    <!-- RIGHT CARDS-->
+    <div class="col-5" style="background-color: var(--light-gray-color)">
+      <div *ngFor="let item of listaArticoli">
+        <card-articolo [articolo]="item"> </card-articolo>
+      </div>
+    </div>
+    <!-- BLANK SPACE -->
+    <div class="col-1" style="background-color: var(--light-gray-color)"></div>
+  </div>
+</div>

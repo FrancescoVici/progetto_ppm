@@ -1,0 +1,27 @@
+<!-- ARTICOLO -->
+<article>
+  <!-- WRAPPER -->
+  <div class="row">
+    <div class="col-12">
+      <!-- IMMAGINE -->
+      <img
+        [src]="articolo?.immagine"
+        data-format="16x9"
+        alt=""
+        width="263"
+        height="147"
+      />
+    </div>
+  </div>
+
+  <!-- WRAPPER -->
+  <div class="row">
+    <!-- TEASER ARTICOLO -->
+    <div class="col-12">
+      <!-- CATEGORIA -->
+      <h1>{{ articolo?.categoria }}</h1>
+      <!-- AUTORE -->
+      <span>{{ articolo?.titolo }}</span>
+    </div>
+  </div>
+</article>

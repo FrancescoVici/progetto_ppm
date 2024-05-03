@@ -1,17 +1,20 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.tabSize": 1,
-    "prettier.jsxSingleQuote": true,
-    "files.trimTrailingWhitespace": true,
-    "[html]": {
-      "editor.formatOnSave": true
-    },
-    "[scss]": {
-      "editor.formatOnSave": true
-    },
-    "prettier.arrowParens": "avoid",
-    "prettier.trailingComma": "none",
-    "prettier.singleQuote": true
-  }
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 1,
+  "prettier.jsxSingleQuote": true,
+  "files.trimTrailingWhitespace": true,
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
+  "prettier.singleQuote": true
+}

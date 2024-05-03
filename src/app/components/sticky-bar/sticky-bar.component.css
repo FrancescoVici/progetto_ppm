@@ -47,7 +47,7 @@
 .align-right {
   display: flex;
   justify-content: flex-end;
-}
+  }
 
 .expand {
   flex-flow: row nowrap;

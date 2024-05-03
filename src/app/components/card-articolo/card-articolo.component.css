@@ -3,8 +3,6 @@
   display: flex !important;
 }
 
-
-
 .bg-settings {
   background-color: var(--white-color);
   margin-left: 0%;
@@ -36,7 +34,7 @@
   line-height: 1.25;
 }
 
-.spacing-categoria{
+.spacing-categoria {
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -67,7 +65,7 @@
   font-weight: 500;
 }
 
-.spacing-titolo{
+.spacing-titolo {
   margin-bottom: 15px;
 }
 
@@ -80,7 +78,7 @@
   font-size: 15px;
 }
 
-.spacing-autore{
+.spacing-autore {
   margin-bottom: 15px;
 }
 

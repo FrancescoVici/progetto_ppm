@@ -3,6 +3,8 @@
 
 <!-- WRAPPER -->
 <div style="padding-top: 70px; background-color: var(--light-gray-color)">
+  <!-- HEADER GIORNALE -->
+  <header-giornale></header-giornale>
   <!-- SEZIONE CATEGORIA -->
   <div class="row">
     <div
@@ -24,14 +26,18 @@
     <!-- LEFT CARDS-->
     <div class="col-5" style="background-color: var(--light-gray-color)">
       <div *ngFor="let item of listaArticoli">
-        <card-articolo [articolo]="item"> </card-articolo>
+        <div class="mt-3">
+          <card-articolo [articolo]="item"> </card-articolo>
+        </div>
       </div>
     </div>
 
     <!-- RIGHT CARDS-->
     <div class="col-5" style="background-color: var(--light-gray-color)">
       <div *ngFor="let item of listaArticoli">
-        <card-articolo [articolo]="item"> </card-articolo>
+        <div class="mt-3">
+          <card-articolo [articolo]="item"> </card-articolo>
+        </div>
       </div>
     </div>
     <!-- BLANK SPACE -->

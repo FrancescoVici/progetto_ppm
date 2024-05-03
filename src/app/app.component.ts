@@ -6,6 +6,7 @@ import { StickyBarComponent } from './components/sticky-bar/sticky-bar.component
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { CardArticoloCategoriaComponent } from './components/card-articolo-categoria/card-articolo-categoria.component';
+import { HeaderGiornaleComponent } from './components/header-giornale/header-giornale.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { CardArticoloCategoriaComponent } from './components/card-articolo-categ
     CardArticoloComponent,
     CardArticoloCategoriaComponent,
     StickyBarComponent,
+    HeaderGiornaleComponent,
     HttpClientModule,
     CommonModule,
   ],

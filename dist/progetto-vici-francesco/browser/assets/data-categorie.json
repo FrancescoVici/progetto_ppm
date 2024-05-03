@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "autore": "Lorem Ipsum",
+      "categoria": "Cultura"
+    },
+    {
+      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "autore": "",
+      "categoria": "Cultura"
+    },
+    {
+      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "autore": "Lorem Ipsum",
+      "categoria": "Cultura"
+    },
+    {
+      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "autore": "",
+      "categoria": "Cultura"
+    }
+  ]
+}

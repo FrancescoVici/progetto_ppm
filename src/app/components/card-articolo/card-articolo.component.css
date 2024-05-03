@@ -3,9 +3,7 @@
   display: flex !important;
 }
 
-.spacing {
-  margin-bottom: 20px;
-}
+
 
 .bg-settings {
   background-color: var(--white-color);
@@ -33,11 +31,14 @@
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 15px;
   color: #000;
   font-size: 13px;
   line-height: 1.25;
-  margin-bottom: 3px;
+}
+
+.spacing-categoria{
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .glyph {
@@ -56,8 +57,6 @@
 /* TITOLO */
 .title {
   font-size: 21px;
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: "DM Serif Display", serif;
 }
 
@@ -65,8 +64,11 @@
   color: var(--black-color);
   text-decoration: none;
   background-color: transparent;
-  margin-bottom: 0.5rem;
   font-weight: 500;
+}
+
+.spacing-titolo{
+  margin-bottom: 15px;
 }
 
 /* AUTORE */
@@ -76,6 +78,10 @@
   margin-top: 8px;
   margin-bottom: 15px;
   font-size: 15px;
+}
+
+.spacing-autore{
+  margin-bottom: 15px;
 }
 
 .prefix {

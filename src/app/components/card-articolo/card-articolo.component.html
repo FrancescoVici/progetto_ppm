@@ -12,15 +12,15 @@
     <!-- TEASER ARTICOLO -->
     <div class="col-8">
       <!-- CATEGORIA -->
-      <div class="categoria glyph">{{ articolo?.categoria }}</div>
+      <div class="categoria glyph spacing-categoria">{{ articolo?.categoria }}</div>
 
       <!-- TITOLO -->
-      <h2 class="title">
+      <h2 class="title spacing-titolo">
         <a href="" class="link-format">{{ articolo?.titolo }}</a>
       </h2>
 
       <!-- AUTORE -->
-      <div class="author" *ngIf="articolo?.autore">
+      <div class="author spacing-autore" *ngIf="articolo?.autore">
         <span class="prefix"> di </span>
         <div class="name">{{ articolo?.autore }}</div>
       </div>

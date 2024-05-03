@@ -5,9 +5,14 @@
 <div style="padding-top: 70px; background-color: var(--light-gray-color)">
   <!-- SEZIONE CATEGORIA -->
   <div class="row">
-    <div class="row containerCategoria">
+    <div
+      class="row containerCategoria"
+      style="background-color: var(--light-gray-color)"
+    >
       <div class="col-3" *ngFor="let item of listaCategorie">
-        <card-articolo-categoria [articolo]="item"> </card-articolo-categoria>
+        <div style="padding: 20px">
+          <card-articolo-categoria [articolo]="item"> </card-articolo-categoria>
+        </div>
       </div>
     </div>
   </div>

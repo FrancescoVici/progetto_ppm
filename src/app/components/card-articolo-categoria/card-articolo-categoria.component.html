@@ -4,24 +4,31 @@
   <div class="row">
     <div class="col-12 d-flex bg-settings">
       <!-- IMMAGINE -->
-      <img
-        [src]="articolo?.immagine"
-        data-format="16x9"
-        alt=""
-        width="263"
-        height="147"
-      >
+      <div class="wrap-image">
+        <img
+          [src]="articolo?.immagine"
+          data-format="16x9"
+          alt=""
+          width="263"
+          height="147"
+          class="image-format"
+        />
+      </div>
     </div>
   </div>
 
   <!-- WRAPPER -->
-  <div class="row">
-    <!-- TEASER ARTICOLO -->
-    <div class="col-12">
+  <div class="row bg-settings">
+    <div class="col wrap-text">
       <!-- CATEGORIA -->
-      <h1>{{ articolo?.categoria }}</h1>
-      <!-- AUTORE -->
-      <span>{{ articolo?.titolo }}</span>
+      <div class="categoria glyph spacing-categoria">
+        {{ articolo?.categoria }}
+      </div>
+
+      <!-- TITOLO -->
+      <h2 class="title spacing-titolo">
+        <a href="" class="link-format">{{ articolo?.titolo }}</a>
+      </h2>
     </div>
   </div>
-  </article>
+</article>

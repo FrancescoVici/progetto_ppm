@@ -5,7 +5,7 @@
 
 .bg-settings {
   background-color: var(--white-color);
-  margin-left: 0%;
+  padding: 0%;
 }
 
 /* IMMAGINE */
@@ -24,6 +24,11 @@
   padding: 0%;
 }
 
+/* WRAPPER CATEGORIA+TITOLO */
+.wrap-text {
+  padding: 15px;
+}
+
 /* CATEGORIA */
 .categoria {
   font-family: "DM Sans", sans-serif;
@@ -35,8 +40,8 @@
 }
 
 .spacing-categoria {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .glyph {
@@ -66,29 +71,5 @@
 }
 
 .spacing-titolo {
-  margin-bottom: 15px;
-}
-
-/* AUTORE */
-.author {
-  font-family: "DM Sans", sans-serif;
-  color: #000;
-  margin-top: 8px;
-  margin-bottom: 15px;
-  font-size: 15px;
-}
-
-.spacing-autore {
-  margin-bottom: 15px;
-}
-
-.prefix {
-  text-transform: lowercase;
-  font-weight: 500;
-}
-
-.name {
-  text-transform: uppercase;
-  font-weight: bold;
-  display: inline-block;
+  margin-bottom: 0px;
 }

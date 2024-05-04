@@ -28,10 +28,14 @@ export class AppComponent {
 
   public listaArticoli: Articolo[] = [];
   public listaCategorie: Articolo[] = [];
+  // public gianni: string = '';
 
   constructor(private http: HttpClient) {
     this.getDataArticoli();
     this.getDataCategorie();
+    //   const x = new Date();
+    //   this.gianni =
+    //     x.getFullYear() + '/' + (x.getMonth() + 1) + '/' + x.getDate();
   }
 
   getDataArticoli(): void {

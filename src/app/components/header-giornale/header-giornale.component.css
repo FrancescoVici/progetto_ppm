@@ -1,1 +1,57 @@
+/* SETTINGS GENERALI */
+.wrap {
+  margin: 0;
+  padding: 0;
+}
 
+.text-style {
+  font-family: "DM Serif Display", serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--dark-gray-color);
+}
+
+/* METEO */
+.meteo-style {
+  transition: all 0.3s;
+  text-decoration: none;
+  transition: transform 0.2s;
+  height: 40px;
+}
+
+.meteo-style:hover {
+  transform: scale(1.1);
+}
+
+.icon-style {
+  color: var(--blue-color);
+}
+
+.temperature-style {
+  font-family: "DM Serif Display", serif;
+  font-size: 32px;
+  padding-right: 2px;
+  font-weight: bold;
+  color: var(--dark-gray-color);
+}
+
+/* DATA */
+.align-right {
+  align-self: flex-end;
+}
+
+.data-style {
+  padding: 0;
+  margin: 0;
+}
+
+/* SEPARATORI */
+.separator-thick {
+  border-bottom: 5px solid black;
+  padding-bottom: 8px;
+}
+
+.separator-thin {
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+}

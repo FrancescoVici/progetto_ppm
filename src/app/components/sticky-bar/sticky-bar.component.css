@@ -1,6 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-/* Barra di navigazione */
+/* BARRA DI NAVIGAZIONE */
 .navbar {
   position: fixed;
   top: 0;
@@ -10,17 +10,17 @@
 }
 
 .navbar-color {
-  background-color: var(--dark-blue-color);
+  background-color: var(--blue-color);
   color: white;
 }
 
-/* Home page button */
+/* BOTTONE HOME */
 .button-logo {
   width: 70px;
   height: auto;
 }
 
-/* Subscribe button */
+/* BOTTONE SUBSCRIBE */
 .subscribe {
   background-color: var(--yellow-color);
   border-radius: 5px;
@@ -33,13 +33,13 @@
   cursor: pointer;
 }
 
-/* facebook button */
+/* BOTTONE FACEBOOK */
 .no-border {
   padding: 0;
   border: none;
 }
 
-/* Positioning generale */
+/* POSITIONING GENERALE */
 .d-flex {
   display: flex !important;
 }
@@ -47,7 +47,7 @@
 .align-right {
   display: flex;
   justify-content: flex-end;
-  }
+}
 
 .expand {
   flex-flow: row nowrap;

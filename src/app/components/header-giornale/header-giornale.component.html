@@ -1,8 +1,12 @@
 <!-- HEADER -->
-<div class="row">
+<div class="row separator-thick">
   <!-- METEO INFO -->
-  <div class="col-3">
-    <button><i class="fas fa-cloud-sun"></i> 20° Mantova</button>
+  <div class="col-3 d-flex flex-column justify-content-end wrap">
+    <a href="" class="meteo-style">
+      <span><i class="fas fa-cloud-sun fa-2x icon-style"></i></span>
+      <span class="temperature-style"> 20° </span>
+      <span class="text-style">Mantova</span>
+    </a>
   </div>
 
   <!-- IMMAGINE TITOLO GIORNALE -->
@@ -13,13 +17,10 @@
   </div>
 
   <!-- DATA -->
-  <div class="col-3"></div>
+  <div class="col-3 d-flex flex-column justify-content-end wrap">
+    <span class="align-right text-style wrap"> {{ data }} </span>
+  </div>
 </div>
-<!-- SEPARATOR 1 -->
-<hr />
 
 <!-- CATEGORIE -->
-<div class="row"></div>
-
-<!-- SEPARATOR 1 -->
-<hr />
+<div class="row separator-thin"></div>

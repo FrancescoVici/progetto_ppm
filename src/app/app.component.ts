@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CardArticoloComponent } from './components/card-articolo/card-articolo.component';
 import { Articolo } from './models';
@@ -7,6 +7,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { CardArticoloCategoriaComponent } from './components/card-articolo-categoria/card-articolo-categoria.component';
 import { HeaderGiornaleComponent } from './components/header-giornale/header-giornale.component';
+import { CategoriaBarModule } from './components/categoria-bar/categoria-bar.module';
 
 @Component({
   selector: 'app-root',
@@ -17,9 +18,11 @@ import { HeaderGiornaleComponent } from './components/header-giornale/header-gio
     CardArticoloCategoriaComponent,
     StickyBarComponent,
     HeaderGiornaleComponent,
+    CategoriaBarModule,
     HttpClientModule,
     CommonModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

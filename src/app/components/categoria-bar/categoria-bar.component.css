@@ -1,68 +1,61 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
-/* BARRA DI NAVIGAZIONE */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 48px;
-  z-index: 1000;
-}
-
-.navbar-color {
-  background-color: var(--blue-color);
-  color: white;
-}
-
-/* BOTTONE HOME */
-.button-logo {
-  width: 70px;
-  height: auto;
-}
-
-/* BOTTONE SUBSCRIBE */
-.subscribe {
-  background-color: var(--yellow-color);
-  border-radius: 5px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  font: 14px "DM-sans", sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* BOTTONE FACEBOOK */
-.no-border {
-  padding: 0;
-  border: none;
-}
-
-/* POSITIONING GENERALE */
-.d-flex {
-  display: flex !important;
-}
-
-.align-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.expand {
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
-
-.d-inline-flex {
-  display: inline-flex;
-}
-
-.distancing {
-  gap: 20px;
-}
-
-.left-gap {
+/* CAROSELLO */
+.custom-carousel {
   position: relative;
-  left: 20px;
+
+  .owl-stage {
+    border-bottom: 2px solid black;
+    overflow: visible;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .owl-prev {
+    left: -20px;
+  }
+
+  .owl-next {
+    right: -20px;
+  }
+
+  .owl-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0;
+  }
+}
+
+/* CATEGORIA */
+.categoria {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 13px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.glyph {
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+}
+
+.glyph::before {
+  content: "///";
+  font-family: "DM Sans", sans-serif;
+  display: inline;
+  padding: 0 0.25em 0 0;
+  color: var(--blue-color);
 }

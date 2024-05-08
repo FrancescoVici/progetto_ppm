@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { CardArticoloCategoriaComponent } from './components/card-articolo-categoria/card-articolo-categoria.component';
 import { HeaderGiornaleComponent } from './components/header-giornale/header-giornale.component';
 import { CategoriaBarModule } from './components/categoria-bar/categoria-bar.module';
+import { ListNecrologioComponent } from './components/list-necrologio/list-necrologio.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { CategoriaBarModule } from './components/categoria-bar/categoria-bar.mod
     CardArticoloCategoriaComponent,
     StickyBarComponent,
     HeaderGiornaleComponent,
+    ListNecrologioComponent,
     CategoriaBarModule,
     HttpClientModule,
     CommonModule,
@@ -31,14 +33,10 @@ export class AppComponent {
 
   public listaArticoli: Articolo[] = [];
   public listaCategorie: Articolo[] = [];
-  // public gianni: string = '';
 
   constructor(private http: HttpClient) {
     this.getDataArticoli();
     this.getDataCategorie();
-    //   const x = new Date();
-    //   this.gianni =
-    //     x.getFullYear() + '/' + (x.getMonth() + 1) + '/' + x.getDate();
   }
 
   getDataArticoli(): void {

@@ -1,0 +1,25 @@
+<!-- TITLE -->
+<a href="" class="list-title"> Necrologio </a>
+
+<!-- WRAPPER -->
+<div class="row wrap">
+  <a *ngFor="let item of necrologioList" href="" class="link-item">
+    <!-- ITEM -->
+    <div class="row">
+      <!-- TEXT -->
+      <div class="col-9">
+        <div class="item-name">{{ item.name }}</div>
+        <div class="item-place-date">{{ item.place_date }}</div>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-3 text-end">
+        <img src="{{ item.image }}" alt="{{ item.name }}" class="item-image" />
+      </div>
+    </div>
+  </a>
+</div>
+<!-- WRAPPER END -->
+
+<!-- LINK TO FULL PAGE -->
+<a href="" class="full-page-link"> VEDI TUTTI I NECROLOGI </a>

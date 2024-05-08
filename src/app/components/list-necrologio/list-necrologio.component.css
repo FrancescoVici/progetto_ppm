@@ -1,0 +1,73 @@
+/*  TITLE  */
+.list-title {
+  font: 30px var(--font-serif);
+  color: var(--blue-color);
+  font-weight: bold;
+  display: block;
+  padding: 10px 0 10px 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.list-title:hover {
+  text-decoration: underline;
+  color: var(--blue-color);
+}
+
+/*  WRAPPER  */
+.wrap {
+  font: 16px var(--font-sans-serif);
+  background-color: var(--gray-color);
+  padding: 15px;
+}
+
+/*  ITEM  */
+.link-item {
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  padding: 15px;
+  background-color: transparent;
+}
+
+.link-item:hover {
+  background-color: var(--dark-gray-color);
+}
+
+/* ITEM DETAILS */
+.item-name {
+  color: #333;
+  font: 14px var(--font-sans-serif);
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.item-place-date {
+  color: #333;
+  font: 12px var(--font-monospace);
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.item-image {
+  width: var(--necrologio-image-size);
+  height: auto;
+  background-color: transparent;
+}
+
+/* FULL PAGE LINK */
+.full-page-link {
+  font: 14px var(--font-sans-serif);
+  color: var(--blue-color);
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  text-align: end;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.full-page-link:hover {
+  text-decoration: underline;
+  color: var(--blue-color);
+}

@@ -6,10 +6,18 @@
 
 :root {
   --black-color: #000000;
-  --dark-gray-color: #212529;
+  --light-black-color: #212529;
+  --dark-gray-color: #a1a1a1;
+  --gray-color: #c2c2c2;
+  --light-gray-color: #d3d3d3;
   --white-color: #ffffff;
   --dark-blue-color: #0c1a32;
   --blue-color: #1a3b70;
   --yellow-color: #ffe500;
-  --light-gray-color: #d3d3d3;
+
+  --necrologio-image-size: 52px;
+
+  --font-serif: "DM Serif Display", serif;
+  --font-sans-serif: "DM Sans", sans-serif;
+  --font-monospace: "Space Mono", monospace;
 }

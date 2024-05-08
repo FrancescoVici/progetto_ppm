@@ -9,6 +9,7 @@ import { CardArticoloCategoriaComponent } from './components/card-articolo-categ
 import { HeaderGiornaleComponent } from './components/header-giornale/header-giornale.component';
 import { CategoriaBarModule } from './components/categoria-bar/categoria-bar.module';
 import { ListNecrologioComponent } from './components/list-necrologio/list-necrologio.component';
+import { CardWidgetComponent } from './components/card-widget/card-widget.component';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +17,12 @@ import { ListNecrologioComponent } from './components/list-necrologio/list-necro
   imports: [
     RouterOutlet,
     CardArticoloComponent,
+    CategoriaBarModule,
     CardArticoloCategoriaComponent,
     StickyBarComponent,
     HeaderGiornaleComponent,
     ListNecrologioComponent,
-    CategoriaBarModule,
+    CardWidgetComponent,
     HttpClientModule,
     CommonModule,
   ],

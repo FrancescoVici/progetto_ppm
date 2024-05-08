@@ -61,6 +61,13 @@
 .title {
   font-size: 21px;
   font-family: "DM Serif Display", serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.title:hover {
+  text-decoration: underline;
+  color: var(--blue-color);
 }
 
 .link-format {

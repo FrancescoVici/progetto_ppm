@@ -25,6 +25,7 @@
 
 .icon-style {
   color: var(--blue-color);
+  padding: 0;
 }
 
 .temperature-style {
@@ -33,6 +34,11 @@
   padding-right: 2px;
   font-weight: bold;
   color: var(--light-black-color);
+}
+
+/* IMMAGINE */
+.top-padding {
+  padding-top: 30px;
 }
 
 /* DATA */

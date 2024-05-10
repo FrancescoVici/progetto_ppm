@@ -12,12 +12,12 @@
     <!-- TEASER ARTICOLO -->
     <div class="col-8">
       <!-- CATEGORIA -->
-      <div class="categoria glyph spacing-categoria">
+      <div [class]="getCategoriaSmall()">
         {{ articolo?.categoria }}
       </div>
 
       <!-- TITOLO -->
-      <h2 class="title spacing-titolo">
+      <h2 [class]="getTitoloSmall()">
         <a href="" class="link-format">{{ articolo?.titolo }}</a>
       </h2>
 

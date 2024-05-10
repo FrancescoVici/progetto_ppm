@@ -8,6 +8,14 @@
   padding: 0%;
 }
 
+.spacing-large {
+  margin: 20px;
+}
+
+.spacing-small {
+  margin: 0;
+}
+
 /* IMMAGINE */
 .image-container {
   padding: 0%;
@@ -59,14 +67,28 @@
 
 /* TITOLO */
 .title {
-  font-size: 21px;
   font-family: "DM Serif Display", serif;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
+.font-small {
+  font-size: 21px;
+}
+
+.font-large {
+  font-size: 50px;
+}
+
 .title:hover {
   text-decoration: underline;
+}
+
+.font-large:hover {
+  color: var(--black-color);
+}
+
+.font-small:hover {
   color: var(--blue-color);
 }
 

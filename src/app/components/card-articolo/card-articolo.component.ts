@@ -12,4 +12,17 @@ import { CommonModule } from '@angular/common';
 })
 export class CardArticoloComponent {
   @Input() public articolo: Articolo | null = null;
+  @Input() public small: boolean = false;
+
+  public getTitoloSmall(): string {
+    return this.small
+      ? 'title font-small spacing-titolo-small'
+      : 'title font-large spacing-titolo-large';
+  }
+
+  public getCategoriaSmall(): string {
+    return this.small
+      ? 'categoria glyph spacing-categoria-small'
+      : 'categoria glyph spacing-categoria-large';
+  }
 }

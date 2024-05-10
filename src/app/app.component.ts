@@ -10,6 +10,7 @@ import { HeaderGiornaleComponent } from './components/header-giornale/header-gio
 import { CategoriaBarModule } from './components/categoria-bar/categoria-bar.module';
 import { ListNecrologioComponent } from './components/list-necrologio/list-necrologio.component';
 import { CardWidgetComponent } from './components/card-widget/card-widget.component';
+import { CardLettiComponent } from './components/card-letti/card-letti.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,7 @@ import { CardWidgetComponent } from './components/card-widget/card-widget.compon
     CardWidgetComponent,
     HttpClientModule,
     CommonModule,
+    CardLettiComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html',

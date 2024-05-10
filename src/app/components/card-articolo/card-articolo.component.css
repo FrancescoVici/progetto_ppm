@@ -34,9 +34,13 @@
   line-height: 1.25;
 }
 
-.spacing-categoria {
+.spacing-categoria-large {
   margin-top: 15px;
   margin-bottom: 10px;
+}
+.spacing-categoria-small {
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .glyph {
@@ -54,10 +58,17 @@
 
 /* TITOLO */
 .title {
-  font-size: 21px;
   font-family: "DM Serif Display", serif;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.font-large {
+  font-size: 21px;
+}
+
+.font-small {
+  font-size: 17px;
 }
 
 .title:hover {
@@ -72,8 +83,12 @@
   font-weight: 500;
 }
 
-.spacing-titolo {
+.spacing-titolo-large {
   margin-bottom: 15px;
+}
+
+.spacing-titolo-small {
+  margin-bottom: 5px;
 }
 
 /* AUTORE */

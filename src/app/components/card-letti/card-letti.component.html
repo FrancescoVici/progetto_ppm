@@ -1,1 +1,45 @@
+<!-- WRAPPER -->
+<div class="wrap">
+  <!-- TITOLO -->
+  <div class="title">Più Letti</div>
 
+  <!-- CONTAINER ARTICOLI -->
+  <div class="spacing">
+    <!-- articoli -->
+    <card-articolo
+      class="separator"
+      [articolo]="{
+        immagine:
+          'https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg',
+        titolo:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit',
+        autore: '',
+        categoria: 'Categoria'
+      }"
+      [small]="true"
+    ></card-articolo>
+    <card-articolo
+      class="separator"
+      [articolo]="{
+        immagine:
+          'https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg',
+        titolo:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit',
+        autore: '',
+        categoria: 'Categoria'
+      }"
+      [small]="true"
+    ></card-articolo>
+    <card-articolo
+      [articolo]="{
+        immagine:
+          'https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg',
+        titolo:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit',
+        autore: '',
+        categoria: 'Categoria'
+      }"
+      [small]="true"
+    ></card-articolo>
+  </div>
+</div>

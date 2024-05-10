@@ -1,0 +1,30 @@
+/* WRAPPER */
+.wrap {
+  padding: 15px;
+}
+
+/* TITOLO */
+.title {
+  font: 30px var(--font-serif);
+  color: var(--blue-color);
+  font-weight: bold;
+  display: block;
+  padding: 10px 0 10px 15px;
+}
+
+/* CONTAINER ARTICOLI */
+.spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.separator {
+  border-bottom: 2px dotted var(--blue-color);
+  padding-bottom: 15px;
+}
+
+/* Aggiungi margine tra i card-articolo */
+.card-articolo + .card-articolo {
+  margin-top: 10px;
+}

@@ -3,64 +3,106 @@
 
 <!-- WRAPPER -->
 <div style="padding-top: 70px; background-color: var(--light-gray-color)">
-  <!-- HEADER GIORNALE -->
   <div class="row">
     <div class="col-2" style="background-color: var(--light-gray-color)"></div>
     <div class="col-8">
+      <!-- HEADER GIORNALE -->
       <header-giornale></header-giornale>
       <categoria-bar></categoria-bar>
-    </div>
-
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
-        <div class="row">
-          <div class="col-4"></div>
-          <div class="col-4"><list-necrologio></list-necrologio></div>
-          <div class="col-4"></div>
+      <div class="row mt-4">
+        <div class="col-8">
+          <div *ngFor="let item of listaArticoli">
+            <div class="mt-3">
+              <card-articolo [articolo]="item"></card-articolo>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <card-widget
+            [widgetName]="'Prima Pagina'"
+            [imagePath]="
+              'https://media.istockphoto.com/id/1321913987/it/foto/sfondo-carta-usato-vecchia-pagina-di-giornale-pubblicit%C3%A0-vintage.jpg?s=612x612&w=0&k=20&c=NfgzuX0VGeSEgaonZDfwdVEUIvsd9hBgUPQEy5PZYxw='
+            "
+            [title]="'La Prima Pagina di oggi'"
+            [category]="'Sport'"
+            [author]="'autore'"
+          ></card-widget>
+          <card-widget
+            [imagePath]="
+              'https://media.istockphoto.com/id/655667160/photo/creative-layout-made-of-flowers-and-leaves-with-paper-card-note-flat-lay-nature-concept.jpg?s=612x612&w=0&k=20&c=ewvAItDgzMBgftif-NJUbTSnOMPtBdi-o6y1JNSaRzM='
+            "
+            [author]="'autore'"
+          ></card-widget>
+          <card-widget
+            [widgetName]="''"
+            [imagePath]="
+              'https://previews.123rf.com/images/jetzt/jetzt1406/jetzt140600010/29307382-nature-background-with-red-daisies-over-blue-sky-square-compisition.jpg'
+            "
+            [title]="'Festa di Primavera'"
+            [category]="''"
+            [author]="''"
+          ></card-widget>
         </div>
       </div>
-      <div class="col-2"></div>
-    </div>
 
-    <div class="col-2" style="background-color: var(--light-gray-color)"></div>
-  </div>
-  <!-- SEZIONE CATEGORIA -->
-  <div class="row">
-    <div
-      class="row containerCategoria"
-      style="background-color: var(--light-gray-color)"
-    >
-      <div class="col-3" *ngFor="let item of listaCategorie">
-        <div style="padding: 20px">
-          <card-articolo-categoria [articolo]="item"> </card-articolo-categoria>
+      <!-- SEZIONE CATEGORIA -->
+
+      <div
+        class="row containerCategoria"
+        style="background-color: var(--blue-color); margin-top: 50px"
+      >
+        <div class="col-3" *ngFor="let item of listaCategorie">
+          <div style="padding: 20px">
+            <card-articolo-categoria [articolo]="item">
+            </card-articolo-categoria>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- SEZIONE CARD -->
-  <div class="row">
-    <!-- BLANK SPACE -->
-    <div class="col-1" style="background-color: var(--light-gray-color)"></div>
-    <!-- LEFT CARDS-->
-    <div class="col-5" style="background-color: var(--light-gray-color)">
-      <div *ngFor="let item of listaArticoli">
-        <div class="mt-3">
-          <card-articolo [articolo]="item"> </card-articolo>
+      <div
+        class="row containerCategoria"
+        style="background-color: var(--blue-color); margin-bottom: 50px"
+      >
+        <div class="col-3" *ngFor="let item of listaCategorie">
+          <div style="padding: 20px">
+            <card-articolo-categoria [articolo]="item">
+            </card-articolo-categoria>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- RIGHT CARDS-->
-    <div class="col-5" style="background-color: var(--light-gray-color)">
-      <div *ngFor="let item of listaArticoli">
-        <div class="mt-3">
-          <card-articolo [articolo]="item"> </card-articolo>
+      <div class="row">
+        <div class="col-8">
+          <div *ngFor="let item of listaArticoli">
+            <div class="mt-3">
+              <card-articolo [articolo]="item"></card-articolo>
+            </div>
+          </div>
         </div>
+        <div class="col-4">
+          <list-necrologio></list-necrologio>
+          <card-widget
+            [imagePath]="
+              'https://media.istockphoto.com/id/655667160/photo/creative-layout-made-of-flowers-and-leaves-with-paper-card-note-flat-lay-nature-concept.jpg?s=612x612&w=0&k=20&c=ewvAItDgzMBgftif-NJUbTSnOMPtBdi-o6y1JNSaRzM='
+            "
+            [author]="'autore'"
+          ></card-widget>
+          <card-widget
+            [widgetName]="''"
+            [imagePath]="
+              'https://previews.123rf.com/images/jetzt/jetzt1406/jetzt140600010/29307382-nature-background-with-red-daisies-over-blue-sky-square-compisition.jpg'
+            "
+            [title]="'Festa di Primavera'"
+            [category]="''"
+            [author]="''"
+          ></card-widget>
+        </div>
+
+        <!-- SEZIONE NECROLOGIO -->
       </div>
+      <div
+        class="col-2"
+        style="background-color: var(--light-gray-color)"
+      ></div>
     </div>
-    <!-- BLANK SPACE -->
-    <div class="col-1" style="background-color: var(--light-gray-color)"></div>
   </div>
 </div>

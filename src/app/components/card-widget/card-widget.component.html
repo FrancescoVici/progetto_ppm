@@ -1,0 +1,37 @@
+<!-- WRAPPER -->
+<div class="row wrap">
+  <div class="col-12 wrap">
+    <!-- TITLE -->
+    <a *ngIf="widgetName" class="widget-name"> {{ widgetName }}</a>
+
+    <!-- STEP -->
+    <div class="step"></div>
+
+    <!-- WIDGET -->
+    <div class="widget-style">
+      <!-- LINKED IMAGE -->
+      <a href="" class="wrap image-link">
+        <img [src]="imagePath" class="format-image" />
+      </a>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- CATEGORIA -->
+          <div *ngIf="category" class="categoria glyph">
+            {{ category }}
+          </div>
+
+          <!-- TITOLO -->
+          <div *ngIf="title" class="title title-positioning">
+            {{ title }}
+          </div>
+
+          <!-- AUTORE -->
+          <div *ngIf="author" class="autore autore-positioning">
+            {{ author }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

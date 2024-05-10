@@ -4,7 +4,7 @@
   color: var(--blue-color);
   font-weight: bold;
   display: block;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 15px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -19,6 +19,7 @@
   font: 16px var(--font-sans-serif);
   background-color: var(--gray-color);
   padding: 15px;
+  margin: 0;
 }
 
 /*  ITEM  */

@@ -11,16 +11,24 @@ import { CategoriaBarModule } from './components/categoria-bar/categoria-bar.mod
 import { ListNecrologioComponent } from './components/list-necrologio/list-necrologio.component';
 import { CardWidgetComponent } from './components/card-widget/card-widget.component';
 import { CardLettiComponent } from './components/card-letti/card-letti.component';
+import { MobileNavBarComponent } from './components/mobile-nav-bar/mobile-nav-bar.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
+    FlexLayoutModule,
     CardArticoloComponent,
     CategoriaBarModule,
     CardArticoloCategoriaComponent,
     StickyBarComponent,
+    MobileNavBarComponent,
     HeaderGiornaleComponent,
     ListNecrologioComponent,
     CardWidgetComponent,
@@ -38,7 +46,14 @@ export class AppComponent {
   public listaArticoli: Articolo[] = [];
   public listaCategorie: Articolo[] = [];
 
-  constructor(private http: HttpClient) {
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe(Breakpoints.Handset)
+    .pipe(map((result) => result.matches));
+
+  constructor(
+    private http: HttpClient,
+    private breakpointObserver: BreakpointObserver
+  ) {
     this.getDataArticoli();
     this.getDataCategorie();
   }

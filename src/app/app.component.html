@@ -1,10 +1,10 @@
 <!-- NAV BAR MENU -->
-<sticky-bar></sticky-bar>
+<sticky-bar *ngIf="!(isHandset$ | async)"></sticky-bar>
 
 <!-- WRAPPER -->
 <div
   class="container-fluid"
-  style="padding-top: 48px; background-color: var(--white-color)"
+  style="padding-top: 0; background-color: var(--white-color)"
 >
   <div class="row">
     <!-- Colonne vuote su diversi breakpoint -->
@@ -16,10 +16,17 @@
     <!-- Main content area -->
     <div
       class="col-12 col-sm-12 col-md-12 col-lg-8"
-      style="background-color: var(--light-gray-color)"
+      style="
+        background-color: var(--light-gray-color);
+        margin: 0;
+        padding: 0;
+        object-fit: contain;
+      "
     >
+      <!-- MOBILE BAR -->
+      <mobile-nav-bar *ngIf="isHandset$ | async"></mobile-nav-bar>
       <!-- HEADER GIORNALE -->
-      <header-giornale></header-giornale>
+      <header-giornale *ngIf="!(isHandset$ | async)"></header-giornale>
       <categoria-bar></categoria-bar>
 
       <div class="row mt-4">

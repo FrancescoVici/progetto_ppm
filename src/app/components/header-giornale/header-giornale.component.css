@@ -44,11 +44,17 @@
 .top-padding {
   padding-top: 5px;
   overflow: hidden;
-  width: 490px;
-  height: 100px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.crop-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* DATA */

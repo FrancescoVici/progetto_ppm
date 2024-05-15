@@ -19,8 +19,4 @@ export class CardArticoloCategoriaComponent {
       ? 'title spacing-titolo font-large'
       : 'title spacing-titolo font-small';
   }
-
-  public getSpacingSize(): string {
-    return this.large ? 'spacing-large' : 'spacing-small';
-  }
 }

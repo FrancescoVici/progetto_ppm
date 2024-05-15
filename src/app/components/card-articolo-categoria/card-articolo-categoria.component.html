@@ -1,25 +1,20 @@
-<!-- ARTICOLO -->
-<article [class]="getSpacingSize()">
-  <!-- WRAPPER -->
-  <div class="row" *ngIf="!this.large">
-    <div class="col-12 d-flex bg-settings">
-      <!-- IMMAGINE -->
-      <div class="wrap-image">
-        <img
-          [src]="articolo?.immagine"
-          data-format="16x9"
-          alt=""
-          width="263"
-          height="147"
-          class="image-format"
-        />
-      </div>
+<!-- WRAPPER -->
+<div class="row d-flex fit">
+  <div class="col-12 bg-settings fit">
+    <!-- UPPER IMAGE (Small Format) -->
+    <div *ngIf="!this.large" class="wrap-image">
+      <img
+        [src]="articolo?.immagine"
+        data-format="16x9"
+        alt=""
+        width="263"
+        height="147"
+        class="image-format"
+      />
     </div>
-  </div>
 
-  <!-- WRAPPER -->
-  <div class="row bg-settings">
-    <div class="col wrap-text">
+    <!-- TEXT WRAPPER -->
+    <div class="wrap-text">
       <!-- CATEGORIA -->
       <div class="categoria glyph spacing-categoria">
         {{ articolo?.categoria }}
@@ -30,22 +25,17 @@
         <a href="" class="link-format">{{ articolo?.titolo }}</a>
       </h2>
     </div>
-  </div>
 
-  <!-- WRAPPER -->
-  <div class="row" *ngIf="this.large">
-    <div class="col-12 d-flex bg-settings">
-      <!-- IMMAGINE -->
-      <div class="wrap-image">
-        <img
-          [src]="articolo?.immagine"
-          data-format="16x9"
-          alt=""
-          width="263"
-          height="147"
-          class="image-format"
-        />
-      </div>
+    <!-- LOWER IMAGE (Large Format) -->
+    <div *ngIf="this.large" class="wrap-image">
+      <img
+        [src]="articolo?.immagine"
+        data-format="16x9"
+        alt=""
+        width="263"
+        height="147"
+        class="image-format"
+      />
     </div>
   </div>
-</article>
+</div>

@@ -1,11 +1,44 @@
-.containerCategoria {
-  background-color: var(--dark-blue-color);
-  padding: 20px;
+/* WRAPPER GENERALE */
+
+.container-fluid {
+  padding: 48px 0 0 0;
+  background-color: var(--white-color);
 }
 
 @media (max-width: 767px) {
   .container-fluid {
     overflow-y: hidden;
     overflow-x: hidden;
+    padding-top: 0 !important;
   }
+}
+
+/* WRAPPER PAGINA GIORNALE */
+
+.wrap-page {
+  background-color: var(--light-gray-color);
+  margin: 0;
+  padding: 0 4% 0 4%;
+}
+
+/* WRAPPER RIGA */
+.fit {
+  padding: 0;
+  margin: 0;
+}
+
+/* WRAPPER MAIN CONTENT */
+.frame {
+  padding: 10px 20px 10px 20px !important;
+}
+
+.fit-content {
+  padding: 0;
+  margin: 0;
+}
+
+/* WRAPPER CATEGORIA */
+.containerCategoria {
+  background-color: var(--dark-blue-color);
+  padding: 20px;
 }

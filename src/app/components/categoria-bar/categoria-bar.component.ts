@@ -31,7 +31,7 @@ export class CategoriaBarComponent implements AfterViewInit {
     dots: false,
     autoWidth: true,
     autoHeight: false,
-    margin: 10,
+    margin: 0,
     navSpeed: 700,
     navText: [
       '<i class="fa-solid fa-chevron-left">',

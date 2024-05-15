@@ -1,70 +1,72 @@
 <!-- NAV BAR MENU -->
 <sticky-bar *ngIf="!(isHandset$ | async)"></sticky-bar>
+<!-- MOBILE BAR -->
+<mobile-nav-bar *ngIf="isHandset$ | async"></mobile-nav-bar>
 
 <!-- WRAPPER -->
-<div
-  class="container-fluid"
-  style="padding-top: 0; background-color: var(--white-color)"
->
+<div class="container-fluid">
   <div class="row">
-    <!-- Colonne vuote su diversi breakpoint -->
+    <!-- LEFT SPACE -->
     <div
       class="col-sm-0 col-md-0 col-lg-2 d-none d-sm-block"
       style="background-color: var(--white-color)"
     ></div>
 
-    <!-- Main content area -->
-    <div
-      class="col-12 col-sm-12 col-md-12 col-lg-8"
-      style="background-color: var(--light-gray-color); margin: 0; padding: 0"
-    >
-      <!-- MOBILE BAR -->
-      <mobile-nav-bar *ngIf="isHandset$ | async"></mobile-nav-bar>
+    <!-- WRAPPER PAGINA GIORNALE -->
+    <div class="col-12 col-sm-12 col-md-12 col-lg-8 wrap-page">
       <!-- HEADER GIORNALE -->
       <header-giornale *ngIf="!(isHandset$ | async)"></header-giornale>
       <categoria-bar></categoria-bar>
 
-      <div class="row mt-4">
+      <div class="row mt-4 fit">
         <!-- Sezione principale -->
-        <div class="col-12 col-sm-8 col-md-8 col-lg-8">
-          <card-articolo-categoria
-            [articolo]="{
-              immagine:
-                'https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg',
-              titolo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-              autore: '',
-              categoria: 'Categoria'
-            }"
-            [large]="true"
-          ></card-articolo-categoria>
-
-          <div *ngFor="let item of listaArticoli">
-            <div class="mt-3">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 fit">
+          <div class="fit frame">
+            <card-articolo-categoria
+              [articolo]="{
+                immagine:
+                  'https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg',
+                titolo:
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                autore: '',
+                categoria: 'Categoria'
+              }"
+              [large]="true"
+            ></card-articolo-categoria>
+          </div>
+          <div class="fit" *ngFor="let item of listaArticoli">
+            <div class="fit frame">
               <card-articolo [articolo]="item"></card-articolo>
             </div>
           </div>
         </div>
 
         <!-- Sezione laterale -->
-        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-          <card-widget
-            [widgetName]="'Prima Pagina'"
-            [imagePath]="
-              'https://media.istockphoto.com/id/1321913987/it/foto/sfondo-carta-usato-vecchia-pagina-di-giornale-pubblicit%C3%A0-vintage.jpg?s=612x612&w=0&k=20&c=NfgzuX0VGeSEgaonZDfwdVEUIvsd9hBgUPQEy5PZYxw='
-            "
-            [title]="'La Prima Pagina di oggi'"
-            [category]="'Sport'"
-            [author]="'autore'"
-          ></card-widget>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 fit">
+          <div class="fit frame">
+            <card-widget
+              [widgetName]="'Prima Pagina'"
+              [imagePath]="
+                'https://media.istockphoto.com/id/1321913987/it/foto/sfondo-carta-usato-vecchia-pagina-di-giornale-pubblicit%C3%A0-vintage.jpg?s=612x612&w=0&k=20&c=NfgzuX0VGeSEgaonZDfwdVEUIvsd9hBgUPQEy5PZYxw='
+              "
+              [title]="'La Prima Pagina di oggi'"
+              [category]="'Sport'"
+              [author]="'autore'"
+            ></card-widget>
+          </div>
 
-          <card-letti></card-letti>
+          <div class="fit frame">
+            <card-letti></card-letti>
+          </div>
 
-          <card-widget
-            [imagePath]="
-              'https://media.istockphoto.com/id/655667160/photo/creative-layout-made-of-flowers-and-leaves-with-paper-card-note-flat-lay-nature-concept.jpg?s=612x612&w=0&k=20&c=ewvAItDgzMBgftif-NJUbTSnOMPtBdi-o6y1JNSaRzM='
-            "
-            [author]="'autore'"
-          ></card-widget>
+          <div class="fit frame">
+            <card-widget
+              [imagePath]="
+                'https://media.istockphoto.com/id/655667160/photo/creative-layout-made-of-flowers-and-leaves-with-paper-card-note-flat-lay-nature-concept.jpg?s=612x612&w=0&k=20&c=ewvAItDgzMBgftif-NJUbTSnOMPtBdi-o6y1JNSaRzM='
+              "
+              [author]="'autore'"
+            ></card-widget>
+          </div>
         </div>
       </div>
 
@@ -136,7 +138,7 @@
       </div>
     </div>
 
-    <!-- Colonne vuote per diversi breakpoint -->
+    <!-- RIGHT SPACE -->
     <div
       class="col-sm-0 col-md-0 col-lg-2 d-none d-sm-block"
       style="background-color: var(--white-color)"

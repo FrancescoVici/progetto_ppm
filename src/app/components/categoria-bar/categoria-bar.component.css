@@ -1,3 +1,12 @@
+/* CONTAINER */
+.container {
+  margin: 0 10px 0 10px;
+  padding-right: 4%;
+  contain: content;
+  align-items: center;
+  justify-content: center;
+}
+
 /* CAROSELLO */
 .custom-carousel {
   position: relative;
@@ -11,19 +20,21 @@
   .owl-next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     cursor: pointer;
+    z-index: 500;
   }
 
   .owl-prev {
     left: -20px;
+    transform: translate(15%, -70%);
   }
 
   .owl-next {
     right: -20px;
+    transform: translate(-15%, -70%);
   }
 
   .owl-item {

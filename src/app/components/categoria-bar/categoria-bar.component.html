@@ -1,7 +1,9 @@
-<!-- CAROSELLO -->
-<owl-carousel-o [options]="customOptions" class="custom-carousel">
-  <!-- SLIDES CAROSELLo -->
-  <ng-template *ngFor="let content of categorie" carouselSlide>
-    <a href="" class="categoria glyph">{{ content }}</a>
-  </ng-template>
-</owl-carousel-o>
+<div class="container">
+  <!-- CAROSELLO -->
+  <owl-carousel-o [options]="customOptions" class="custom-carousel">
+    <!-- SLIDES CAROSELLo -->
+    <ng-template *ngFor="let content of categorie" carouselSlide>
+      <a href="" class="categoria glyph">{{ content }}</a>
+    </ng-template>
+  </owl-carousel-o>
+</div>

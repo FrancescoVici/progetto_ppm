@@ -5,7 +5,11 @@
 
 .bg-settings {
   background-color: var(--white-color);
-  margin-left: 0%;
+}
+
+.spacing {
+  padding: 0;
+  margin: 0;
 }
 
 /* IMMAGINE */

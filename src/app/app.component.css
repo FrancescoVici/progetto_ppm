@@ -3,12 +3,12 @@
 .container-fluid {
   padding: 48px 0 0 0;
   background-color: var(--white-color);
+  overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
   .container-fluid {
     overflow-y: hidden;
-    overflow-x: hidden;
     padding-top: 0 !important;
   }
 }
@@ -30,6 +30,7 @@
 /* WRAPPER MAIN CONTENT */
 .frame {
   padding: 10px 20px 10px 20px !important;
+  background-color: transparent;
 }
 
 .fit-content {
@@ -40,5 +41,28 @@
 /* WRAPPER CATEGORIA */
 .containerCategoria {
   background-color: var(--dark-blue-color);
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.title-category {
+  font: 24px var(--font-serif);
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.icon-category {
+  margin: 20px;
+  color: var(--white-color);
+}
+
+/* SPONSORIZZATI */
+.sponsor-image {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+.padding {
+  background-color: transparent;
+  height: 100px;
 }

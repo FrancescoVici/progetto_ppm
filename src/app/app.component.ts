@@ -17,6 +17,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { FooterGiornaleComponent } from './components/footer-giornale/footer-giornale.component';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +33,7 @@ import { map } from 'rxjs/operators';
     HeaderGiornaleComponent,
     ListNecrologioComponent,
     CardWidgetComponent,
+    FooterGiornaleComponent,
     HttpClientModule,
     CommonModule,
     CardLettiComponent,

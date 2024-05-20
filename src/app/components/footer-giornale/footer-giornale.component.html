@@ -1,0 +1,83 @@
+<!-- WRAPPER -->
+<div class="row fit dotted-line">
+  <!-- WIDGETS -->
+  <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-sm-12 fit">
+    <div class="fit frame-tall">
+      <card-widget
+        [widgetName]="'Contenuto 1'"
+        [imagePath]="
+          'https://placehold.co/300/023e8a/f7f7f7/?text=Contenuto+1&font=lora'
+        "
+        [title]="'Contenuto 1'"
+        [category]="''"
+        [author]="''"
+      ></card-widget>
+    </div>
+  </div>
+
+  <div class="col-0 col-sm-0 col-md-0 col-lg-4"></div>
+
+  <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-sm-12 fit">
+    <div class="fit frame-tall">
+      <card-widget
+        [widgetName]="'Contenuto 2'"
+        [imagePath]="
+          'https://placehold.co/300/023e8a/f7f7f7/?text=Contenuto+2&font=lora'
+        "
+        [title]="'Contenuto 2'"
+        [category]="''"
+        [author]="''"
+      ></card-widget>
+    </div>
+  </div>
+
+  <!-- WRAPPER -->
+  <div class="row vertical-align fit separators">
+    <!-- FOOTER LINKS BAR -->
+    <div
+      class="col-12 col-sm-12 col-md-6 col-lg-3 vertical-align align-left fit frame-link"
+    >
+      <a href="" class="fit frame footer-link">Pubblicità</a>
+      <a href="" class="fit frame footer-link">Privacy</a>
+      <a href="" class="fit frame footer-link">Cookie</a>
+    </div>
+
+    <div
+      class="col-12 col-sm-12 col-md-6 col-lg-4 ml-1 vertical-align align-left fit frame-link"
+    >
+      <a href="" class="fit frame footer-link">Consensi</a>
+      <a href="" class="fit frame footer-link">Contatti</a>
+      <a href="" class="fit frame footer-link">Chi siamo</a>
+    </div>
+    <div class="col-0 col-sm-0 col-md-0 col-lg-1"></div>
+    <div
+      class="col-12 col-sm-12 col-md-12 col-lg-4 vertical-align align-right fit frame-link"
+    >
+      <button class="no-border">
+        <i class="fa-brands fa-whatsapp icon frame"></i>
+      </button>
+      <button class="no-border">
+        <i class="fa fa-facebook zoom icon frame"></i>
+      </button>
+      <a href="" class="fit frame footer-link">Necrologie</a>
+      <button class="subscribe">Abbonati</button>
+    </div>
+  </div>
+  <!-- WRAPPER -->
+  <div class="row fit">
+    <!-- SPONSOR LOGOS -->
+    <div class="col-3 col-sm-3 col-md-2 col-lg-1 fit" *ngFor="let _ of times">
+      <img
+        src="https://placehold.co/300/f7f7f7/000000/?text=Logo&font=lora"
+        class="image-format"
+      />
+    </div>
+
+    <div class="col-12">
+      <span class="rights"
+        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua</span
+      >
+    </div>
+  </div>
+</div>

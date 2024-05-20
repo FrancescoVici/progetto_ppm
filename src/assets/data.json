@@ -1,45 +1,27 @@
 {
   "data": [
     {
-      "immagine": "https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg",
+      "immagine": "https://placehold.co/220x125/1a3b70/f7f7f7/?text=Articolo&font=lora",
       "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "autore": "Lorem Ipsum",
       "categoria": "Categoria"
     },
     {
-      "immagine": "https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg",
+      "immagine": "https://placehold.co/220x125/1a3b70/f7f7f7/?text=Articolo&font=lora",
       "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "autore": "",
       "categoria": "Categoria"
     },
     {
-      "immagine": "https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg",
+      "immagine": "https://placehold.co/220x125/1a3b70/f7f7f7/?text=Articolo&font=lora",
       "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "autore": "Lorem Ipsum",
       "categoria": "Categoria"
     },
     {
-      "immagine": "https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg",
+      "immagine": "https://placehold.co/220x125/1a3b70/f7f7f7/?text=Articolo&font=lora",
       "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
       "autore": "",
-      "categoria": "Categoria"
-    },
-    {
-      "immagine": "https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg",
-      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "autore": "Lorem Ipsum",
-      "categoria": "Categoria"
-    },
-    {
-      "immagine": "https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg",
-      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "autore": "",
-      "categoria": "Categoria"
-    },
-    {
-      "immagine": "https://live.staticflickr.com/4206/34920873983_09fba3d66c_b.jpg",
-      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "autore": "Lorem Ipsum",
       "categoria": "Categoria"
     }
   ]

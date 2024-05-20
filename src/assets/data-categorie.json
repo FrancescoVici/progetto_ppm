@@ -1,28 +1,28 @@
 {
   "data": [
     {
-      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
-      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "immagine": "https://placehold.co/220x125/4682b4/f7f7f7/?text=Articolo+Categoria&font=lora",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "autore": "Lorem Ipsum",
-      "categoria": "Cultura"
+      "categoria": "Categoria"
     },
     {
-      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
-      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "immagine": "https://placehold.co/220x125/4682b4/f7f7f7/?text=Articolo+Categoria&font=lora",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "autore": "",
-      "categoria": "Cultura"
+      "categoria": "Categoria"
     },
     {
-      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
-      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "immagine": "https://placehold.co/220x125/4682b4/f7f7f7/?text=Articolo+Categoria&font=lora",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "autore": "Lorem Ipsum",
-      "categoria": "Cultura"
+      "categoria": "Categoria"
     },
     {
-      "immagine": "https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg",
-      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "immagine": "https://placehold.co/220x125/4682b4/f7f7f7/?text=Articolo+Categoria&font=lora",
+      "titolo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "autore": "",
-      "categoria": "Cultura"
+      "categoria": "Categoria"
     }
   ]
 }
